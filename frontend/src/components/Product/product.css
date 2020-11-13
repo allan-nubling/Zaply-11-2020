@@ -1,5 +1,4 @@
 .product {
-    /* flex-grow: 1; */
     padding: 20px;
     background-color: white;
     box-shadow: var(--box-shadow);
@@ -100,3 +99,28 @@
     margin: 0 10px;
 }
 
+@media(max-width: 576px) {
+    .product {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "id"
+            "img"
+            "categories"
+            "name"
+            "image"
+            "brand"
+            "price"
+            "alert"
+            "actions";
+    }
+
+    .product .img-wrap {
+        max-height: 50vh;
+    }
+    .product .actions { 
+        grid-area: actions;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}

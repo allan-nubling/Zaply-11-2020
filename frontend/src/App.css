@@ -18,6 +18,18 @@
     background: linear-gradient(180deg, rgba(220,220,221,1) 0%, rgba(245,249,252,1) 20%, rgba(245,249,252,1) 80%, rgba(220,220,221,1) 100%);
 }
 
+@media(max-width: 576px) {
+    .App {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "content"
+            "footer"
+        ;
+    }
+  }
+
+
 .flat-button {
     cursor: pointer;
     border: none;
@@ -28,6 +40,7 @@
    -khtml-user-select: none; 
    -moz-user-select: none; 
    -ms-user-select: none; 
+   padding: 0 20px;
 }
 .flat-button.active { background-color: var(--accent-color); }
 .flat-button:hover { background-color: var(--accent-color); }

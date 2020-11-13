@@ -11,3 +11,17 @@
     height: 80%;
     object-fit: contain;
 }
+
+.logo i {
+    display: none;
+    position: absolute;
+    left: 20px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+@media(max-width: 579px){
+    .logo i {
+        display: block;
+    }
+}

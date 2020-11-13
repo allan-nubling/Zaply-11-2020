@@ -169,16 +169,19 @@ class Product extends Component {
                             <input type="checkbox" name="keepValues" id="keepValues" onChange={e => this.setState({ [e.target.name]: e.target.checked })} />
                             Manter Valores
                         </label>
-                        <button className="flat-button" onClick={e => this.cancelSubmit()}>
-                            Cancelar
-                        </button>
-                        <button className="flat-button" onClick={e => this.submitForm()}>
-                            {
-                                this.state.loading
-                                ? <div className="spinner-border spinner-border-sm text-light" role="status"></div>
-                                : 'Salvar'
-                            }
-                        </button>
+                        <div>
+                            <button className="flat-button" onClick={e => this.cancelSubmit()}>
+                                Cancelar
+                            </button>
+                            <button className="flat-button" onClick={e => this.submitForm()}>
+                                {
+                                    this.state.loading
+                                    ? <div className="spinner-border spinner-border-sm text-light" role="status"></div>
+                                    : 'Salvar'
+                                }
+                            </button>
+
+                        </div>
                     </div>
 
                 {/* Alertas */}

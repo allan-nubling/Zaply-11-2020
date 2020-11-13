@@ -2,12 +2,13 @@
     margin: auto;
     background-color: white;
     box-shadow: var(--box-shadow);
-    height: 50vh;
-    width: 50vw;
+    min-height: 50vh;
+    min-width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .home input {

@@ -2,9 +2,10 @@ import React from 'react'
 import './nav.css'
 
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-export default function Nav({props, dispatch}) {
-    return <div className="nav" >
+function Nav({state, dispatch}) {
+    return <div className={`nav ${state.showNav ? 'show' : ''}`} >
         <div className="accordion" id="nav">
             <Link to="/" className="link">Início</Link>
             <div id="products" className="link" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">Produtos</div>
@@ -27,3 +28,6 @@ export default function Nav({props, dispatch}) {
         </div>
     </div>
 }
+
+const mapState = (store) => ({ state: store.store})
+export default connect(mapState)(Nav)

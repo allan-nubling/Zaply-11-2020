@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import React from 'react'
 import './App.css';
 
-import { HashRouter, Switch } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Routes from './Routes'
 
 import Header from './components/header/Header';

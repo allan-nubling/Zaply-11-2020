@@ -1,7 +1,6 @@
 import Axios from 'axios'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import products from '../../redux/reducers/products'
 import { pageTitle } from '../../redux/reducers/store'
 import { API_AUTH, API_URL } from '../../tools/constants'
 import './import-products.css'
@@ -20,7 +19,7 @@ class ImportProducs extends Component {
             })
             this.setState({ products })
         }
-        file && file.name.split('.')[1] == 'csv' && reader.readAsText(file)
+        file && file.name.split('.')[1] === 'csv' && reader.readAsText(file)
     }
 
     deleteProduct(index) {

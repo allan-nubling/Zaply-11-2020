@@ -35,3 +35,18 @@ No backend eu decidi fazer uma api usando Node.js, Express para gerenciamento de
 Utilizei os serviços de banco mySQL e App Engine do google cloud para hospedar os serviços.
 Eu fiz a api de forma que ela faça diferentes formatos de querys no banco dependendo dos parâmetros da requisição, e também fiz o cadastro de novos dados no banco de dados aceitar mais de um produto por vez, assim possibilitando a construção de uma feature de carregar um csv na aplicação frontend, que vai validar os dados do csv e enviar todos de uma  vez ( ou separar em partes) e enviar para o backend.
 É bom salientar que, por hora, a aplicação está fazendo hard-delete dos dados, então eu decidi deixar uma verificação na hora da exclusão.
+
+
+
+##### Para rodar localmente:
+  Precisamos configurar um banco de dados mySQL com um schema utf-8 general e cadastrar o endereço, nome do banco e usuario/senha no arquivo do tipo .env que deve ficar dentro de /backend/configs/.env
+  o arquivo deve ter este formato: [.env file](https://github.com/allan-nubling/Zaply-11-2020/blob/env-arquivo/backend/configs/.env)
+ Para configurar as tabelas e executar o projeto devemos entar na pasta /backend pelo console e executar os seguintes comandos:
+ $ npm install //para baixar todas dependencias
+ $ npx knex migrate:latest //(se não funcionar esse comando talvez seja necessário instalar o knex globalmente)
+ $ npm start //Inicia o servidor (atualmente configurado para porta 3031 pode ser alterado no arquivo index.js)
+ ou
+ $ npm run dev //Inicia o servidor no modo de desenvolvimento com nodemon
+ 
+ 
+ 

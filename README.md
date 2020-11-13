@@ -2,6 +2,8 @@
 ### Projeto/Desafio Zaply
 Olá, seja bem-vindo(a)! Eu  sou o Allan Nubling e este é a minha aplicação de dashboard para desafio da Zaply.
 
+[Você pode encontrar o app neste link hospedado do gCloud](https://zaply-295212.rj.r.appspot.com/#/)
+
 ### O desafio:
 > “Fazer um dashboard para consulta e edição de produtos.
 O principal do dashboard é um campo que pesquisa e a possibilidade de edição em uma base de produtos com imagem, nome, preço, marca e categoria. Outras features 	são bem vindas e diferenciais.

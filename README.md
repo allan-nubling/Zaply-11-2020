@@ -39,14 +39,19 @@ Eu fiz a api de forma que ela faça diferentes formatos de querys no banco depen
 
 
 ##### Para rodar localmente:
-  Precisamos configurar um banco de dados mySQL com um schema utf-8 general e cadastrar o endereço, nome do banco e usuario/senha no arquivo do tipo .env que deve ficar dentro de /backend/configs/.env
-  o arquivo deve ter este formato: [.env file](https://github.com/allan-nubling/Zaply-11-2020/blob/env-arquivo/backend/configs/.env)
- Para configurar as tabelas e executar o projeto devemos entar na pasta /backend pelo console e executar os seguintes comandos:
- $ npm install //para baixar todas dependencias
- $ npx knex migrate:latest //(se não funcionar esse comando talvez seja necessário instalar o knex globalmente)
- $ npm start //Inicia o servidor (atualmente configurado para porta 3031 pode ser alterado no arquivo index.js)
+Precisamos configurar um banco de dados mySQL com um schema utf-8 general e cadastrar o endereço, nome do banco e usuario/senha no arquivo do tipo .env que deve ficar dentro de /backend/configs/.env
+
+O arquivo deve ter este formato: [.env file](https://github.com/allan-nubling/Zaply-11-2020/blob/env-arquivo/backend/configs/.env)
+
+Para configurar as tabelas e executar o projeto devemos entar na pasta /backend pelo console e executar os seguintes comandos:
+ 
+$ npm install //para baixar todas dependencias
+
+$ npx knex migrate:latest //(se não funcionar esse comando talvez seja necessário instalar o knex globalmente)
+ 
+$ npm start //Inicia o servidor (atualmente configurado para porta 3031 pode ser alterado no arquivo index.js)
  ou
- $ npm run dev //Inicia o servidor no modo de desenvolvimento com nodemon
+$ npm run dev //Inicia o servidor no modo de desenvolvimento com nodemon
  
  
  

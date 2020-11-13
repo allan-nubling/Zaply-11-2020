@@ -1,0 +1,14 @@
+.header {
+    grid-area: header;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow)
+}
+
+.header .title {
+    flex-grow: 1;
+    padding: 0 20px 0 20px;
+    width: fit-content;
+    font-size: 1.4rem;
+}

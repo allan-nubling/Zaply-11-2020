@@ -1,0 +1,19 @@
+## Desafio:
+
+Fazer um dashboard para consulta e edição de produtos.
+
+O principal do dashboard é um campo que pesquisa e a possibilidade de edição em uma [base de produtos](https://www.notion.so/Processo-Seletivo-Zaply-11-2020-770778f838f0487b8f55e0df21412926) com imagem, nome, preço, marca e categoria. Outras features são bem vindas e diferenciais. 
+
+A tecnologia principal é o React e não é obrigatório ter back-end, mas outras tecnologias de front-end e back-end serão diferenciais.
+
+O código precisa estar hospedado no [Github](https://github.com/) e no `README.md` os detalhes do projeto de como usar, tecnologias e o porquê de ter usado essa tecnologia.
+
+Sugestões de tecnologias não obrigatórias:
+
+- [GraphQL](https://graphql.org/)
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](http://expressjs.com/) ou [AdonisJS](https://adonisjs.com/)
+- SQL
+- Serviço Cloud([AWS](https://aws.amazon.com/) ou [Google Cloud](https://cloud.google.com/))

@@ -1,0 +1,102 @@
+.products {
+    grid-area: content;
+    flex-grow: 1;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Estilos da tabela */
+.products table {
+    border-collapse: collapse;
+}
+
+.products td, .products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.products tr:nth-child(even){background-color: #f2f2f2;}
+  
+.products tr:hover {background-color: #ddd;}
+  
+.products th {
+    padding: 12px 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.products th > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .actions {
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+}
+
+.products .actions  i {
+    color: var(--primary-color);
+    margin: auto 5px;
+}
+
+.products .actions  i:hover {
+    color: var(--accent-color);
+}
+.products .actions .fa-trash:hover {
+    color: red;
+}
+
+
+/* Estilos dos filtros */
+.products .filters{
+    display: flex;
+    align-items: stretch;
+    padding: 10px 0;
+}
+
+.products h4 { margin: 10px 0 0 0; }
+
+.products select { min-width: 120px; }
+
+.products button { min-width: 120px; }
+
+.products input[type="text"] {
+    flex-grow: 1;
+}
+
+
+
+
+/* Estilos da paginaçõa */
+.products .nav-footer {
+    margin: 20px auto;
+    display: flex;
+}
+.products .nav-footer .flat-button {
+    padding: 5px 15px;
+}
+
+
+/* Estilos para quando não encontra/carregar itens */
+.products .loading {
+    margin: auto;
+}
+
+.products .error {
+    margin: auto;
+    justify-content: center;
+}
+
+/* estilos para as opões de visualização */
+.products .options {
+    text-align: end;
+}
+.products .options label {
+    margin: 4px 5px;
+}

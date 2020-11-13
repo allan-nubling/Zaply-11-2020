@@ -1,0 +1,102 @@
+.product {
+    /* flex-grow: 1; */
+    padding: 20px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6 , minmax(auto, 60px));
+    grid-template-areas: 
+        "id id img"
+        "categories categories img"
+        "name name img"
+        "image image img"
+        "brand price img"
+        "alert alert actions";
+    align-items: center;
+}
+
+
+/* Estilos do formulário */
+.product label {
+    padding: 0 20px;
+}
+.product input[type="text"] {
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+}
+
+.product .img-wrap {
+    height: 100%;
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.product .img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product .id { 
+    grid-area: id;
+    padding: 10px 20px;
+}
+.product .name { grid-area: name;}
+.product .categories { grid-area: categories;}
+.product .image { grid-area: image;}
+.product .price { grid-area: price;}
+.product .brand { grid-area: brand;}
+
+/* Estilos dos alertas */
+.product .border-error {
+    border: 2px solid red !important;
+}
+.product .color-error {
+    color: red !important;
+}
+.product .alert-field {
+    grid-area: alert;
+    max-height: 25px;
+    text-align: center;
+    color: white !important;
+}
+.product .alert-field.error {
+    background-color: red !important;
+}
+
+.product .alert-field.succes {
+    background-color: #28a745 !important;
+}
+
+
+/* Estilos das ações */
+.product .actions { 
+    grid-area: actions;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.product .actions .flat-button{
+    width: 100px;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.product .actions .delete {
+    background-color: red;
+}
+
+.product .actions label{
+    margin: 0;
+}
+
+.product .actions input[type="checkbox"]{
+    margin: 0 10px;
+}
+

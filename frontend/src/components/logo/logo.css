@@ -1,0 +1,13 @@
+.logo {
+    grid-area: logo;
+    background-color: #354052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}

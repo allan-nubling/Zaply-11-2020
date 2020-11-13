@@ -1,0 +1,22 @@
+.about{
+    margin: auto;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    min-height: 70vh;
+    width: 70vw;
+    padding: 10vh 10vw;
+    text-align: justify;
+}
+
+.about .desafio span {
+    color: grey;
+}
+
+.about img {
+    margin: auto;
+    width: 80%;
+}
+
+.about .img {
+    text-align: center;
+}

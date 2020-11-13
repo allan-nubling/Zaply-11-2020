@@ -1,0 +1,12 @@
+.import-products .load-file {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.import-products .load-file label{
+    margin-right: 20px !important;
+}
+.import-products .load-file button{
+    height: calc(1.5em + .75rem + 2px);
+}

@@ -50,7 +50,9 @@ $ npm install //para baixar todas dependencias
 $ npx knex migrate:latest //(se não funcionar esse comando talvez seja necessário instalar o knex globalmente)
  
 $ npm start //Inicia o servidor (atualmente configurado para porta 3031 pode ser alterado no arquivo index.js)
- ou
+
+ou
+
 $ npm run dev //Inicia o servidor no modo de desenvolvimento com nodemon
  
  
